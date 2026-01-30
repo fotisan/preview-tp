@@ -1,96 +1,622 @@
 <!doctype html>
-<html lang="el">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Terry Podesta, LCSW | Therapy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <title>Terry Podesta, LCSW | Therapist in Menlo Park and Virtual</title>
+  <meta name="description" content="Individual and family therapy in Menlo Park and virtual. Compassionate, honest, and direct support for anxiety, stress, life transitions, grief, relationships, trauma, and more. Call (408) 809-5952." />
+
+  <meta property="og:title" content="Terry Podesta, LCSW | Menlo Park and Virtual Therapy" />
+  <meta property="og:description" content="In person and virtual individual and family therapy sessions. Compassionate, honest, and direct support. Call (408) 809-5952." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="menlo-park-office-hero.webp" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Terry Podesta",
+    "honorificSuffix": "LCSW",
+    "jobTitle": "Licensed Clinical Social Worker",
+    "telephone": "+1-408-809-5952",
+    "image": "terry-podesta-bio.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Menlo Park",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Menlo Park, CA", "California"],
+    "knowsAbout": [
+      "Anxiety",
+      "Stress",
+      "Depression",
+      "Trauma",
+      "Grief",
+      "Life Transitions",
+      "Family Conflict",
+      "Relationship Issues",
+      "Burnout"
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <header class="header">
+  <!-- Header -->
+  <header class="header" id="top">
     <div class="container header-inner">
-      <a href="#" class="logo-stack">
-        <span class="logo-text">Terry Podesta, LCSW</span>
-        <span class="logo-sub">Menlo Park and virtual</span>
+      <a class="logo" href="#top" aria-label="Home">
+        <span class="logo-stack">
+          <span class="logo-text">Terry Podesta, LCSW</span>
+          <span class="logo-sub">Menlo Park and virtual</span>
+        </span>
       </a>
-      <nav class="nav">
-        <div class="nav-panel">
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navPanel">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+
+        <div class="nav-panel" id="navPanel">
           <a class="nav-link" href="#about">About</a>
           <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#approach">Approaches</a>
           <a class="nav-link" href="#faq">FAQ</a>
+          <a class="nav-link" href="#contact">Contact</a>
+
           <a class="nav-link nav-cta" href="#contact">Request appointment</a>
+
+          <!-- Socials in NAV (icons) -->
+          <div class="nav-socials" aria-label="Quick links">
+            <a class="icon-link" href="tel:+14088095952" aria-label="Call (408) 809-5952" title="Call (408) 809-5952">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 1.1-.3 1.2.4 2.5.7 3.9.7.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.1c.6 0 1 .4 1 1 0 1.4.2 2.7.7 3.9.1.4 0 .8-.3 1.1l-2.1 2.1Z"/>
+              </svg>
+            </a>
+
+            <a class="icon-link" href="#contact" aria-label="Client Portal" title="Client Portal">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 2a7 7 0 0 1 7 7c0 2.4-1.2 4.5-3 5.8V18a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-3.2C6.2 13.5 5 11.4 5 9a7 7 0 0 1 7-7Zm0 2a5 5 0 0 0-5 5c0 1.9 1 3.6 2.6 4.4.3.2.4.5.4.8V18h4v-3h-2v-2h4v2h-2v3h2v-3.8c0-.3.2-.6.4-.8A5 5 0 0 0 17 9a5 5 0 0 0-5-5Z"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </nav>
     </div>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy reveal">
+        <p class="kicker">Menlo Park and virtual therapy</p>
         <h1 class="hero-title">A path to self discovery and healing</h1>
-        <p class="hero-lead">In person and virtual individual and family therapy sessions. A compassionate, honest, and direct approach.</p>
+        <p class="hero-lead">
+          In person and virtual individual and family therapy sessions.
+          A compassionate, honest, and direct approach to help you reach your goals and feel more like yourself again.
+        </p>
+
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Request appointment</a>
+          <a class="btn btn-soft" href="#contact">Request appointment</a>
           <a class="btn btn-ghost" href="tel:+14088095952">Call (408) 809-5952</a>
         </div>
+
+        <div class="trust-row" aria-label="Highlights">
+          <div class="trust-pill">
+            <span class="trust-icon" aria-hidden="true">✓</span>
+            <span>Offers telehealth</span>
+          </div>
+          <div class="trust-pill">
+            <span class="trust-icon" aria-hidden="true">✓</span>
+            <span>Accepts online payments</span>
+          </div>
+          <div class="trust-pill">
+            <span class="trust-icon" aria-hidden="true">✓</span>
+            <span>Accepting new clients</span>
+          </div>
+        </div>
       </div>
+
       <div class="hero-card reveal">
-        <img class="hero-image" src="office.jpg" alt="Office">
+        <div class="hero-image-wrap">
+          <img
+            class="hero-image"
+            src="menlo-park-office-hero.webp"
+            alt="Therapy office in Menlo Park"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </div>
+
         <div class="hero-card-body">
-          <p><strong>Currently accepting new clients</strong></p>
-          <a class="btn btn-primary btn-full" href="#contact" style="margin-top:15px">Request appointment</a>
+          <h2 class="card-title">Currently accepting new clients</h2>
+          <p class="card-text">
+            I currently have openings for in person and virtual sessions.
+            Reach out to schedule a brief consultation call and see if we are a good fit.
+          </p>
+
+          <div class="hero-actions" style="margin: 0;">
+            <a class="btn btn-soft btn-full" href="#contact">Request appointment</a>
+            <a class="btn btn-ghost btn-full" href="#contact">Client portal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-bg" aria-hidden="true"></div>
+  </section>
+
+  <!-- Quick contact ribbon -->
+  <section class="ribbon" aria-label="Quick contact">
+    <div class="container ribbon-inner reveal">
+      <div class="ribbon-left">
+        <span class="badge">14 years experience</span>
+        <span class="muted">Individuals ages 4 to 91, and families</span>
+      </div>
+
+      <div class="ribbon-right">
+        <a class="toplink" href="tel:+14088095952">Call: (408) 809-5952</a>
+        <span class="dot">•</span>
+        <a class="toplink" href="#contact">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container split">
+      <div class="reveal">
+        <div class="bio-head" aria-label="Therapist profile">
+          <div class="bio-avatar">
+            <img
+              src="terry-podesta-bio.webp"
+              alt="Portrait of Terry Podesta"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <p class="bio-kicker muted">Terry Podesta</p>
+            <p class="bio-sub">Licensed Clinical Social Worker</p>
+          </div>
+        </div>
+
+        <h2 class="section-title">Everyone needs support sometimes</h2>
+        <p class="section-lead">
+          Hello. My name is Terry Podesta. I am a therapist with fourteen years of experience.
+          I have worked with individuals from four to ninety one years old with many different concerns, yet the heart of the work is the same.
+          We want to feel happy and heard, loved and like we belong. We want to have an impact and feel good in who we are.
+          I will enter our sessions with a compassionate, honest, and direct approach to help you reach your goals.
+        </p>
+
+        <div class="bullets">
+          <div class="bullet">
+            <div class="bullet-dot" aria-hidden="true"></div>
+            <p><strong>Compassion with clarity.</strong> You can be fully human here, and we still keep the work focused and meaningful.</p>
+          </div>
+          <div class="bullet">
+            <div class="bullet-dot" aria-hidden="true"></div>
+            <p><strong>Support that fits real life.</strong> We translate insight into choices you can actually keep doing between sessions.</p>
+          </div>
+          <div class="bullet">
+            <div class="bullet-dot" aria-hidden="true"></div>
+            <p><strong>In person and virtual.</strong> Menlo Park sessions, or secure telehealth when that is the best fit.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card reveal">
+        <h3 class="info-title">Session options</h3>
+        <div class="info-grid">
+          <div class="info-item">
+            <p class="info-k">Location</p>
+            <p class="info-v">Menlo Park, California</p>
+          </div>
+          <div class="info-item">
+            <p class="info-k">Virtual</p>
+            <p class="info-v">Telehealth sessions available</p>
+          </div>
+          <div class="info-item">
+            <p class="info-k">Clients</p>
+            <p class="info-v">Individuals and families</p>
+          </div>
+          <div class="info-item">
+            <p class="info-k">Availability</p>
+            <p class="info-v">Currently accepting new clients</p>
+          </div>
+        </div>
+
+        <a class="btn btn-primary btn-full" href="#contact">Schedule a brief consult</a>
+        <p class="small muted center">Your information stays private and respected.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice photos -->
+  <section class="section section-alt" id="space">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="section-title">A calm space to do the work</h2>
+        <p class="section-lead">In person sessions in Menlo Park, with the same grounded care available virtually.</p>
+      </div>
+
+      <div class="gallery reveal" aria-label="Practice photos">
+        <div class="gallery-tile">
+          <img src="menlo-park-office-01.webp" alt="Therapy office in Menlo Park" loading="lazy" />
+        </div>
+        <div class="gallery-tile">
+          <img src="menlo-park-office-02.webp" alt="Comfortable seating area in a therapy space" loading="lazy" />
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Services -->
   <section class="section section-alt" id="services">
     <div class="container">
       <div class="section-head reveal">
         <h2 class="section-title">Services</h2>
-        <p>Therapy for the moments that change everything.</p>
+        <p class="section-lead">
+          Therapy for the things that quietly pile up, and the moments that change everything.
+          If you are not sure where to start, we can decide together in a brief consultation.
+        </p>
       </div>
+
       <div class="cards">
         <article class="card reveal">
-          <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-5-9h10v2H7z"/></svg></div>
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+              <path d="M12 3l8 4v6c0 5-3.5 8-8 8S4 18 4 13V7l8-4z"></path>
+              <path d="M9 12l2 2 4-5"></path>
+            </svg>
+          </div>
           <h3 class="card-h">Anxiety and stress</h3>
-          <p class="card-p">Support for anxiety, social anxiety, and burnout.</p>
+          <p class="card-p">Support for anxiety, social anxiety, stress, burnout, coping skills, and mindfulness.</p>
+          <p class="card-mini muted">Feel steadier in your body and clearer in your mind.</p>
         </article>
-        </div>
+
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+              <path d="M12 21s-7-4.4-9.3-8.6C1 9 3 6 6.3 6c1.9 0 3.1 1 3.7 2 0.6-1 1.8-2 3.7-2C17 6 19 9 21.3 12.4 19 16.6 12 21 12 21z"></path>
+            </svg>
+          </div>
+          <h3 class="card-h">Depression and low mood</h3>
+          <p class="card-p">Work through depression, seasonal affective disorder, loneliness, and self esteem.</p>
+          <p class="card-mini muted">More energy, more connection, more self respect.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+              <path d="M12 2v6"></path>
+              <path d="M12 16v6"></path>
+              <path d="M4.5 4.5l4.2 4.2"></path>
+              <path d="M15.3 15.3l4.2 4.2"></path>
+              <path d="M2 12h6"></path>
+              <path d="M16 12h6"></path>
+              <path d="M4.5 19.5l4.2-4.2"></path>
+              <path d="M15.3 8.7l4.2-4.2"></path>
+              <path d="M12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path>
+            </svg>
+          </div>
+          <h3 class="card-h">Trauma and grief</h3>
+          <p class="card-p">Trauma support, grief, bereavement counseling, and adjustment disorder.</p>
+          <p class="card-mini muted">A safe pace with honest, steady care.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+              <path d="M7 11h10"></path>
+              <path d="M7 7h10"></path>
+              <path d="M7 15h6"></path>
+              <path d="M5 3h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-4 4v-4H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="card-h">Relationships and family</h3>
+          <p class="card-p">Relationship issues, family conflict, codependency, and life transitions.</p>
+          <p class="card-mini muted">Clearer communication and healthier boundaries.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+              <path d="M12 21s7-4 7-10a7 7 0 0 0-14 0c0 6 7 10 7 10z"></path>
+              <path d="M12 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+            </svg>
+          </div>
+          <h3 class="card-h">Life stages and change</h3>
+          <p class="card-p">Support for aging, cultural adjustment, and big shifts in identity and direction.</p>
+          <p class="card-mini muted">Feel grounded while life is moving.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+              <path d="M4 13h4l2-6 4 12 2-6h4"></path>
+              <path d="M3 19h18"></path>
+            </svg>
+          </div>
+          <h3 class="card-h">Mind body support</h3>
+          <p class="card-p">Physical wellness focus, breathwork, and practical tools for daily regulation.</p>
+          <p class="card-mini muted">Build stability you can feel day to day.</p>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="faq">
+  <!-- Approaches -->
+  <section class="section" id="approach">
+    <div class="container split">
+      <div class="reveal">
+        <h2 class="section-title">Approaches</h2>
+        <p class="section-lead">
+          I tailor the work to your needs and goals, using approaches that support real change while keeping sessions human and grounded.
+        </p>
+
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-n">1</div>
+            <div class="step-b">
+              <h3 class="step-h">Cognitive and values based support</h3>
+              <p class="step-p">Cognitive Behavioral Therapy and Acceptance and Commitment Therapy to reduce overwhelm and move toward what matters.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-n">2</div>
+            <div class="step-b">
+              <h3 class="step-h">Relational and family focused work</h3>
+              <p class="step-p">Family systems, family and marital therapy, and person centered support for clearer connection and boundaries.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-n">3</div>
+            <div class="step-b">
+              <h3 class="step-h">Regulation and compassion</h3>
+              <p class="step-p">Breathwork, compassion focused, and supportive therapy for steadiness, self trust, and emotional safety.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-card reveal">
+        <p class="quote">
+          “We are humans who want to feel happy and heard, loved and like we belong. Therapy can help you come back to that.”
+        </p>
+        <div class="quote-meta">
+          <div class="avatar">
+            <img src="terry-podesta-bio.webp" alt="Portrait of Terry Podesta" loading="lazy" />
+          </div>
+          <div>
+            <p class="quote-name">Terry Podesta, LCSW</p>
+            <p class="small muted">Menlo Park and virtual</p>
+          </div>
+        </div>
+
+        <div class="mini-trust">
+          <div class="mini-trust-item">
+            <span class="mini-icon" aria-hidden="true">⟡</span>
+            <span>Compassionate, honest, and direct</span>
+          </div>
+          <div class="mini-trust-item">
+            <span class="mini-icon" aria-hidden="true">⟡</span>
+            <span>Individual and family therapy</span>
+          </div>
+          <div class="mini-trust-item">
+            <span class="mini-icon" aria-hidden="true">⟡</span>
+            <span>In person and telehealth options</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
     <div class="container">
       <div class="section-head reveal">
         <h2 class="section-title">FAQ</h2>
+        <p class="section-lead">A few practical questions people often ask before reaching out.</p>
       </div>
-      <div class="accordion reveal">
-        <button class="acc-item">Do you offer virtual sessions? <span>+</span></button>
-        <div class="acc-a" hidden>Yes, I offer secure telehealth sessions for all clients in California.</div>
+
+      <div class="accordion reveal" data-accordion>
+        <button class="acc-item" aria-expanded="false">
+          <span class="acc-q">Do you offer in person and virtual sessions?</span>
+          <span class="acc-ic" aria-hidden="true"></span>
+        </button>
+        <div class="acc-a" hidden>
+          <p>
+            Yes. I offer in person sessions in Menlo Park and virtual sessions through telehealth.
+            We can choose the format that fits your needs and schedule.
+          </p>
+        </div>
+
+        <button class="acc-item" aria-expanded="false">
+          <span class="acc-q">Who do you work with?</span>
+          <span class="acc-ic" aria-hidden="true"></span>
+        </button>
+        <div class="acc-a" hidden>
+          <p>
+            I work with individuals and families. I have supported people from four to ninety one years old with many different concerns.
+          </p>
+        </div>
+
+        <button class="acc-item" aria-expanded="false">
+          <span class="acc-q">How do I get started?</span>
+          <span class="acc-ic" aria-hidden="true"></span>
+        </button>
+        <div class="acc-a" hidden>
+          <p>
+            The simplest first step is a brief consultation call. We talk about what is bringing you in, what you want to change, and whether I am the right fit.
+          </p>
+        </div>
+
+        <button class="acc-item" aria-expanded="false">
+          <span class="acc-q">Do you offer family or couples work?</span>
+          <span class="acc-ic" aria-hidden="true"></span>
+        </button>
+        <div class="acc-a" hidden>
+          <p>
+            Yes. I offer family and marital therapy, as well as individual sessions. We will decide the best structure based on your goals.
+          </p>
+        </div>
+
+        <button class="acc-item" aria-expanded="false">
+          <span class="acc-q">Do you accept online payments?</span>
+          <span class="acc-ic" aria-hidden="true"></span>
+        </button>
+        <div class="acc-a" hidden>
+          <p>
+            Yes. Online payments are available. If you have questions about logistics, you can ask when you reach out.
+          </p>
+        </div>
+
+        <button class="acc-item" aria-expanded="false">
+          <span class="acc-q">What is the Good Faith Estimate and No Surprises Act notice?</span>
+          <span class="acc-ic" aria-hidden="true"></span>
+        </button>
+        <div class="acc-a" hidden>
+          <p>
+            You have the right to receive a Good Faith Estimate of what your services may cost.
+            If you would like that information, request it when you contact me.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section section-alt" id="contact">
-    <div class="container">
-      <div class="section-head reveal">
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container split">
+      <div class="reveal">
         <h2 class="section-title">Contact</h2>
+        <p class="section-lead">
+          Please contact me to schedule a brief consultation call or set an appointment to see if I am a good fit to support you.
+        </p>
+
+        <div class="contact-block">
+          <div class="contact-line reveal">
+            <span class="cicon" aria-hidden="true">☎</span>
+            <div>
+              <p class="ck">Phone</p>
+              <a class="cv" href="tel:+14088095952">(408) 809-5952</a>
+            </div>
+          </div>
+
+          <div class="contact-line reveal">
+            <span class="cicon" aria-hidden="true">⌁</span>
+            <div>
+              <p class="ck">Location</p>
+              <p class="cv">Menlo Park, California and virtual</p>
+            </div>
+          </div>
+
+          <div class="contact-line reveal">
+            <span class="cicon" aria-hidden="true">✓</span>
+            <div>
+              <p class="ck">Availability</p>
+              <p class="cv">Currently accepting new clients</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map reveal">
+          <iframe
+            title="Map of Menlo Park, CA"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Menlo%20Park%20CA&output=embed">
+          </iframe>
+        </div>
       </div>
-      <form class="form reveal">
-        <input class="input" type="text" placeholder="Full Name">
-        <input class="input" type="email" placeholder="Email">
-        <textarea class="input" rows="5" placeholder="How can I help?"></textarea>
-        <button class="btn btn-primary btn-full">Send Message</button>
+
+      <form class="form reveal" id="contactForm" novalidate>
+        <h3 class="form-title">Request an appointment</h3>
+
+        <label class="field">
+          <span class="label">Full name</span>
+          <input class="input" type="text" name="name" autocomplete="name" required />
+          <span class="error" data-error-for="name"></span>
+        </label>
+
+        <label class="field">
+          <span class="label">Phone or email</span>
+          <input class="input" type="text" name="contact" autocomplete="tel" required />
+          <span class="error" data-error-for="contact"></span>
+        </label>
+
+        <label class="field">
+          <span class="label">What would you like support with?</span>
+          <textarea class="input textarea" name="message" rows="5" required></textarea>
+          <span class="error" data-error-for="message"></span>
+        </label>
+
+        <button class="btn btn-primary btn-full" type="submit">Send request</button>
+        <p class="small muted center">Demo form for presentation purposes.</p>
       </form>
     </div>
   </section>
 
-  <footer style="padding: 40px 0; text-align: center; border-top: 1px solid var(--line);">
-    <p class="small muted">© 2026 Terry Podesta, LCSW. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="foot-left">
+        <p class="foot-brand">Terry Podesta, LCSW</p>
+        <p class="small muted">
+          Menlo Park and virtual. Individual and family therapy sessions.
+        </p>
+
+        <div class="socials" aria-label="Quick links">
+          <a class="foot-link social-pill icon-link" href="tel:+14088095952" aria-label="Call (408) 809-5952">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 1.1-.3 1.2.4 2.5.7 3.9.7.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.1c.6 0 1 .4 1 1 0 1.4.2 2.7.7 3.9.1.4 0 .8-.3 1.1l-2.1 2.1Z"/>
+            </svg>
+          </a>
+
+          <a class="foot-link social-pill icon-link" href="#contact" aria-label="Client Portal">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 2a7 7 0 0 1 7 7c0 2.4-1.2 4.5-3 5.8V18a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-3.2C6.2 13.5 5 11.4 5 9a7 7 0 0 1 7-7Zm0 2a5 5 0 0 0-5 5c0 1.9 1 3.6 2.6 4.4.3.2.4.5.4.8V18h4v-3h-2v-2h4v2h-2v3h2v-3.8c0-.3.2-.6.4-.8A5 5 0 0 0 17 9a5 5 0 0 0-5-5Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="foot-links">
+        <a class="foot-link" href="#about">About</a>
+        <a class="foot-link" href="#services">Services</a>
+        <a class="foot-link" href="#approach">Approaches</a>
+        <a class="foot-link" href="#contact">Contact</a>
+      </div>
+
+      <div class="foot-legal">
+        <p class="small muted">© <span id="year"></span> Terry Podesta, LCSW. All rights reserved.</p>
+        <p class="small muted" style="margin-top: 10px;">
+          <a class="toplink" href="#" aria-label="Notice of Privacy Practices">Notice of Privacy Practices</a>
+          <span class="dot">•</span>
+          <a class="toplink" href="#" aria-label="No Surprises Act">No Surprises Act</a>
+        </p>
+        <p class="small muted" style="margin-top: 10px; max-width: 44ch;">
+          You have the right to receive a Good Faith Estimate of what your services may cost.
+        </p>
+      </div>
+    </div>
   </footer>
+
+  <!-- Scroll to top -->
+  <button class="to-top" id="toTop" aria-label="Scroll to top">
+    <span aria-hidden="true">↑</span>
+  </button>
 
   <script src="script.js"></script>
 </body>
